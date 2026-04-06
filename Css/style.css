@@ -1,0 +1,115 @@
+:root{
+    --amarelo: #ffd21f;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("../Img/Hogwarts.webp"); /* coloca sua imagem */
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #a020f0;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+.botoes {
+  position: absolute;
+
+  width: 220px;
+  height: 70px;
+
+  border: none;
+  border-radius: 40px;
+  background-color: var(--amarelo);
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* BOTÃO ESQUERDA (Começar) */
+.botoes:first-of-type {
+  bottom: 120px;
+  left: 80px;
+}
+/* BOTÃO DIREITA (Sair) */
+.botoes:last-of-type {
+  bottom: 120px;
+  right: 80px;
+}
+
+
+.bonus {
+  position: absolute;
+
+  width: 220px;
+  height: 70px;
+
+  border: none;
+  border-radius: 40px;
+  background-color: #facc15;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bonusBtn{
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    border-radius: 50%;
+    height: 50px;
+    width: 75px;
+    color: black;
+}
+
+button:hover{
+    background: greenyellow;
+    color: purple;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*para a versão de celular?*/
+
+/*@media (max-width: 768px) {
+  .botoes,
+  .bonus {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .botoes:first-of-type {
+    bottom: 200px;
+  }
+
+  .bonus {
+    bottom: 120px;
+  }
+
+  .botoes:last-of-type {
+    bottom: 40px;
+  }
+}*/

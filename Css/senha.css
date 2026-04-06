@@ -1,0 +1,49 @@
+:root{
+    --amarelo: #ffd21f;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  background-image: url("../Img/Hogwarts.webp");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #a020f0;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+.envio{
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    border-radius: 50%;
+    height: 50px;
+    width: 75px;
+    color: black;
+}
+
+.dica{
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    border-radius: 50%;
+    height: 50px;
+    width: 75px;
+    color: black;
+}
+
+.menu{
+    background-color: var(--amarelo);
+    border-color: var(--amarelo);
+    border-radius: 50%;
+    height: 50px;
+    width: 75px;
+    color: black;
+}
