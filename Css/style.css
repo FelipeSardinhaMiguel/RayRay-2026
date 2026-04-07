@@ -3,7 +3,6 @@
 }
 
 body {
-  margin: 0;
   height: 100vh;
 
   background-image: url("../Img/Hogwarts.webp"); /* coloca sua imagem */
@@ -37,15 +36,15 @@ h1 {
 
 /* BOTÃO ESQUERDA (Começar) */
 .botoes:first-of-type {
-  bottom: 120px;
+  bottom: 180px;
   left: 80px;
 }
+
 /* BOTÃO DIREITA (Sair) */
 .botoes:last-of-type {
-  bottom: 120px;
+  bottom: 180px;
   right: 80px;
 }
-
 
 .bonus {
   position: absolute;
@@ -60,7 +59,7 @@ h1 {
   font-size: 20px;
   cursor: pointer;
 
-  bottom: 40px;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -75,41 +74,42 @@ h1 {
 }
 
 button:hover{
-    background: greenyellow;
-    color: purple;
-    transition: 0.3s;
+  background: greenyellow;
+  color: purple;
+  transition: 0.3s;
 }
 
+.botoes:hover {
+  transform: scale(1.05);
+}
 
+.bonus:hover {
+  transform: translateX(-50%) scale(1.05);
+}
 
-
-
-
-
-
-
-
-
-
-/*para a versão de celular?*/
-
-/*@media (max-width: 768px) {
-  .botoes,
-  .bonus {
+/*para a versão de celular*/
+@media (max-width: 768px)
+{
+  .botoes, .bonus{
     width: 80%;
     left: 50%;
+    right: auto;
     transform: translateX(-50%);
   }
-
+  
   .botoes:first-of-type {
-    bottom: 200px;
+    left: 50%;
+    right: auto;
+    bottom: 220px;
   }
-
+  
   .bonus {
-    bottom: 120px;
+    bottom: 130px;
   }
-
+  
   .botoes:last-of-type {
+    left: 50%;
+    right: auto;
     bottom: 40px;
   }
-}*/
+}
