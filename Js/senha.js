@@ -17,3 +17,21 @@ function senha2()
     }
     //else tocar audio de erro
 }
+
+function caixaDica(){
+    const botaoDica = document.querySelector(".dicaBtn");
+    const dicaCaixa = document.getElementById("dicaCaixa");
+
+    let exibicao;
+
+    botaoDica.addEventListener("click", () => {
+        dicaCaixa.style.display = "block";
+
+        //limpa caso clique varias vezes
+        clearTimeout(exibicao);
+
+        exibicao = setTimeout(() => {
+            dicaCaixa.style.display = "none";
+        }, 5000); //cinco segundos
+    });
+}

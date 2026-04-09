@@ -20,9 +20,22 @@ h1 {
   margin-top: 40px;
 }
 
+.divSenha{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 10px;
+}
+
 input{
     background-color: whitesmoke;
     border-radius: 40px;
+    width: 250px;
+    border: none;
+    padding: 0 15px;
 }
 
 .envio{
@@ -35,7 +48,7 @@ input{
     cursor: pointer;
 }
 
-.dica{
+.dicaBtn{
     background-color: var(--amarelo);
     width: 220px;
     height: 70px;
@@ -43,14 +56,20 @@ input{
     border-radius: 40px;
     font-size: 20px;
     cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
 }
 
-.menu{
-    background-color: var(--amarelo);
-    width: 220px;
-    height: 70px;
-    border: none;
-    border-radius: 40px;
-    font-size: 20px;
-    cursor: pointer;
+.dicaCaixa{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    display: none;
 }

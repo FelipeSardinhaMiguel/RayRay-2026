@@ -2,10 +2,78 @@
     --amarelo: #ffd21f;
 }
 
-body{
-    background-image: url(../Img/Hogwarts.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center, center;
-    background-attachment: fixed;
+body {
+  height: 100vh;
+
+  background-image: url("../Img/Hogwarts.webp");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: lime;
+    font-size: 60px;
+}
+
+.carrossel{
+    /*margin: 100px auto;*/
+    margin: auto;
+    width: 80%;
+    border: 6px solid var(--amarelo);
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding-right: 1em;
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+.grupo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: rotacao 7s infinite linear
+}
+
+.cards{
+    flex: 0 0 5em;  
+    height: 5em;
+    padding: 1em;
+    background: palevioletred;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes rotacao{
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+a{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: deeppink;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+a:hover{
+    color: hotpink;
 }
